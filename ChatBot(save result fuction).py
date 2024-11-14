@@ -22,7 +22,7 @@ api_key = os.getenv("API_KEY")
 model = ChatOpenAI(model="gpt-4o-mini", api_key=api_key)
 
 # PDF 파일 로드. 파일의 경로 입력
-loader = PyPDFLoader("한권으로 끝내는 주식과 세금.pdf")
+loader = PyPDFLoader("pdf/한권으로 끝내는 주식과 세금.pdf")
 
 # 페이지 별 문서 로드
 docs = loader.load()
